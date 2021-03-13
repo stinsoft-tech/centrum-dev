@@ -5,7 +5,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "publish:prod": "./node_modules/.bin/expo publish --release-channel prod-v1",
+    "publish:dev": "./node_modules/.bin/expo publish --release-channel staging-v1"
   },
   "dependencies": {
     "expo": "~40.0.0",
@@ -16,8 +18,8 @@
     "react-native-dotenv": "^2.5.3",
     "react-native-web": "~0.13.12",
     "react-native-webview": "11.0.0",
-    "expo-constants": "~9.3.3",
-    "expo-updates": "~0.4.1"
+    "expo-updates": "~0.4.1",
+    "expo-constants": "~9.3.3"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"
